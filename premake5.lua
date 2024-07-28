@@ -1,4 +1,4 @@
-workspace "GuildWars"
+workspace "GWFileServer"
     system ("windows")
     architecture ("x86")
     characterset ("MBCS")
@@ -18,7 +18,7 @@ workspace "GuildWars"
     outputdir = "%{cfg.buildcfg}"
     target_dir = "%{wks.location.name}"
 
-    project "FileServer-Client"
+    project "GWFileServer-Client"
         kind "ConsoleApp"
         language "C++"
         cppdialect "C++20"
