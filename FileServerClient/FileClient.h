@@ -60,6 +60,9 @@ public:
 	inline bool   IsConnected() { return m_socket != 0; }
 	inline char*  GetDomain()   { return m_domain; }
 
+	uint32_t GetGwExeID1() { return m_handshakeData.gw_exe_id; }
+	uint32_t GetGwExeID2() { return m_handshakeData.ge_exe_2_id; }
+
 private:	
 	bool  SendHandshake(CtoFS::GameType type = CtoFS::GameType::GuildWars1);
 	bool  SendRequest(uint32_t id, uint32_t curr_version, FStoC::FileDetails* out);

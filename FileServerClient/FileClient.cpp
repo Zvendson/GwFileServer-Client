@@ -248,11 +248,11 @@ bool FileClient::SendHandshake(CtoFS::GameType type)
 
 	m_handshakeData = *packet;
 	
-	printf("header      = 0x%X\n", m_handshakeData.header);
-	printf("size        = 0x%X\n", m_handshakeData.size);
-	printf("manifest_id = %d\n", m_handshakeData.asset_manifest_id);
-	printf("gw_exe_id   = %d\n", m_handshakeData.gw_exe_id);
-	printf("gw_exe_2_id = %d\n", m_handshakeData.ge_exe_2_id);
+	// printf("header      = 0x%X\n", m_handshakeData.header);
+	// printf("size        = 0x%X\n", m_handshakeData.size);
+	// printf("manifest_id = %d\n", m_handshakeData.asset_manifest_id);
+	// printf("gw_exe_id   = %d\n", m_handshakeData.gw_exe_id);
+	// printf("gw_exe_2_id = %d\n", m_handshakeData.ge_exe_2_id);
 	
 
 	return true;
